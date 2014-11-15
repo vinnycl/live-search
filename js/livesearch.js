@@ -16,13 +16,15 @@ $('#search').keyup(function () {
 					output += '</li>';
 				}
 		 });
-		 output += '<li> Sugestões de busca</li>';
+		 output += '<li id="suggestion-type"> Sugestões de busca</li>';
 		 $.each(data.suggestions, function(key, val) {
 				if (val.search(searchTm) !== -1) {
 						 found = 1;
-				output += '<li> <a href="http://g1.globo.com/busca/?q=' + val +' " >' + val + '</a></li>';
+				output += '<li class="suggestion-more"> <a href="http://g1.globo.com/busca/?q=' + val +' " >' + val + '</a></li>';
 				}
 		 });
+		 output += '<li class="suggestion-searcher on-globo"> <a href="http://g1.globo.com/busca/?q=' + searchFld + '"> buscar &#39;<span>' + searchFld + '</span>&#39; na Globo.com &rsaquo; </a></li>';
+		 output += '<li class="suggestion-searcher on-web"> <a href="https://www.google.com.br/#q=' + searchFld + '"> buscar &#39;<span>' + searchFld + '</span>&#39; na Web &rsaquo; </a></li>';
 		output += '</ul>';
 		if (found==1) {
 			$('#suggestions').removeClass('suggestions-hidden');

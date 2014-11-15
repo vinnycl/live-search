@@ -3,7 +3,7 @@
       {
          "title":"Pop &amp; Art",
          "url":"http://g1.globo.com/pop-arte/index.html",
-         "logo":"http://s.glbimg.com/bu/i/fc/5fb2e18d-a47f-4bb8-9a7e-b66871cf53c0.png",
+         "logo":"images/logo.png",
          "queries":[
             "musica",
             "pop",
@@ -16,7 +16,7 @@
       {
          "title":"Pol&iacute;tica",
          "url":"http://g1.globo.com/politica/index.html",
-         "logo":"http://s.glbimg.com/bu/i/fc/5fb2e18d-a47f-4bb8-9a7e-b66871cf53c0.png",
+         "logo":"images/logo.png",
          "queries":[
             "elei&ccedil;&otilde;es",
             "pol&iacute;tica",
