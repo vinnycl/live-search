@@ -20,13 +20,12 @@ $('#search').keyup(function () {
 	 });
 			output += '</ul>';
 			if (found==1) {
-			$('#update').removeClass('update-hidden');
-			$('#update').html(output);
+				$('#update').removeClass('update-hidden');
+				$('#update').html(output);
 			}
 			else {
 					$('#update').addClass('update-hidden');
 			}
-
 });
 		} else {
 			$('#update').addClass('update-hidden');

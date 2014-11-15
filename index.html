@@ -5,15 +5,26 @@
 		<meta charset="utf-8" />
 
 		<style>
-			.update-hidden {
-				display: none;
-			}
+			body {line-height: 1; font-family: Arial, sans-serif; }
+			ol, ul {list-style: none; }
+			fieldset, ol, ul, body {border: 0 none; padding: 0; margin: 0;}
+			fieldset {padding: 18px 0 0 100px; position: relative;}
+			.box-sizing {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+			.update-hidden {display: none;}
+			.menu-g1 {position: relative; height: 74px;background: #a80000; border-bottom: 3px solid #8e0000; }
+			input#search { outline: 0px; border: 0px;  height: 25px; width: 166px;  padding: 5px 5px 5px 30px; border-radius: 4px; font-family: 'ProximaNova-Bold',Arial,Helvetica,sans-serif; font-size: 14px; color: #333; background: #fff ; box-shadow: inset 0 1px 1px 0#030303; font-weight: bold; }
+			label {background-size: 300px 85px; background-image: url(sprite_suggest.png); background-position: 8px -30px; width: 26px; height: 34px; content: " "; display: block; position: absolute; z-index:  2; cursor: pointer; }
+			#update {top: 60px; left: 65px;background: white;  width: 270px; border: none; -webkit-border-radius: 4px 4px 4px 4px; -moz-border-radius: 4px 4px 4px 4px; border-radius: 4px 4px 4px 4px; -webkit-box-shadow: 0 0 5px 3px rgba(0,0,0,0.2); box-shadow: 0 0 5px 3px rgba(0,0,0,0.2); position: absolute; padding-top: 5px;}
 		</style>
 	</head>
 	<body>
-		<div id="searcharea">
-			<label for="search">Procurar:</label>
-			<input type="search" name="search" id="search" placeholder="name or info" />
+		<div class="menu-g1 box-sizing">
+			<form name="busca-padrao" id="frmBusca" action="http://g1.globo.com/busca/" method="get" accept-charset="utf-8">
+				<fieldset>
+					<label for="search" class="lupa"></label>
+					<input id="search" placeholder="BUSCAR" type="text" class="estadoInicial" name="q" id="busca-campo" autocomplete="off" >
+				</fieldset>
+			</form>
 		</div>
 		<div id="update" class="update-hidden">test</div>
 
