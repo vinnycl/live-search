@@ -1,5 +1,21 @@
 $('#search').keyup(function () {
-		var searchFld = $('#search').val();
+
+
+function replaceSpecialChars(str) {
+	str = str.replace(/[ÀÁÂÃÄÅ]/,"A");
+	str = str.replace(/[àáâãäå]/,"a");
+	str = str.replace(/[ÈÉÊË]/,"E");
+	str = str.replace(/[í]/,"i");
+	str = str.replace(/[Í]/,"I");
+	str = str.replace(/[ú]/,"u");
+	str = str.replace(/[Ú]/,"U");
+	str = str.replace(/[Ç]/,"C");
+	str = str.replace(/[ç]/,"c");
+	return str.replace(/[^a-z0-9]/gi,'');
+}
+
+var searchFld = replaceSpecialChars($('#search').val());
+
 		if (searchFld.length) {
 			var searchTm = new RegExp(searchFld, "i");
 			var found = 0;
@@ -9,14 +25,14 @@ $('#search').keyup(function () {
 		 output = '<ul class="searchresults">';
 
 		 $.each(data.hightlights, function(i, item) {
-
+			console.log(searchFld);
 				if (item.title.search(searchTm) != -1) {
 						 found = 1;
 					//console.log(item.queries);
 					output += '<li class="header-suggestion">';
 					output += '<a class="logo-suggestion" href="' + item.url + '" target="_blank" ><img src="' + item.logo + ' " ></a> ';
 					output += '<a class="title-suggestion"  href="' + item.url + '" target="_blank" >' + item.title + '</a>';
-					//output += '<span>' + item.queries +  '</span>';
+
 					output += '</li>';
 				}
 		 });
