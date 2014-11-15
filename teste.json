@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Yahoo",
+        "website" : "http://yahoo.com"
+    },
+    {
+        "title" : "Google",
+        "website" : "http://google.com"
+    },
+    {
+        "title" : "Netflix",
+        "website" : "http://netflix.com"
+    },
+    {
+        "title" : "Meetup",
+        "website" : "http://meetup.com"
+    },
+    {
+        "title" : "Facebook",
+        "website" : "http://facebook.com"
+    },
+    {
+        "title" : "Weather Underground",
+        "website" : "http://www.wunderground.com"
+    }
+]
