@@ -1,6 +1,3 @@
-$('#search').keyup(function () {
-
-
 function replaceSpecialChars(str) {
 	str = str.replace(/[ÀÁÂÃÄÅ]/,"A");
 	str = str.replace(/[àáâãäå]/,"a");
@@ -14,6 +11,8 @@ function replaceSpecialChars(str) {
 	return str.replace(/[^a-z0-9]/gi,'');
 }
 
+$('#search').keyup(function () {
+
 var searchFld = replaceSpecialChars($('#search').val());
 
 		if (searchFld.length) {
@@ -25,10 +24,10 @@ var searchFld = replaceSpecialChars($('#search').val());
 		 output = '<ul class="searchresults">';
 
 		 $.each(data.hightlights, function(i, item) {
-			console.log(searchFld);
+			//console.log(searchFld);
 				if (item.title.search(searchTm) != -1) {
 						 found = 1;
-					//console.log(item.queries);
+					console.log(item.queries);
 					output += '<li class="header-suggestion">';
 					output += '<a class="logo-suggestion" href="' + item.url + '" target="_blank" ><img src="' + item.logo + ' " ></a> ';
 					output += '<a class="title-suggestion"  href="' + item.url + '" target="_blank" >' + item.title + '</a>';
