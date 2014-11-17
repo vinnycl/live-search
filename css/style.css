@@ -150,6 +150,7 @@ a {
 }
 .searchresults .suggestion-searcher  a span {
 	color: #000;
+	font-weight: bold;
 }
 .searchresults .suggestion-searcher  a b {
 	font-weight: normal;
@@ -157,3 +158,6 @@ a {
 	position: relative;
 	top: -2px;
 }
+
+
+
