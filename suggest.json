@@ -1,7 +1,7 @@
 {
 	"hightlights":[
 		{
-			"title":"Pop &amp; Art",
+			"title":"Pop & Arte",
 			"url":"http://g1.globo.com/pop-arte/index.html",
 			"logo":"images/logo.png",
 			"queries":[
@@ -14,15 +14,15 @@
 			]
 		},
 		{
-			"title":"Pol&iacute;tica",
+			"title":"Política",
 			"url":"http://g1.globo.com/politica/index.html",
 			"logo":"images/logo.png",
 			"queries":[
-				"elei&ccedil;&otilde;es",
-				"pol&iacute;tica",
+				"eleicoes",
+				"politica",
 				"dilma",
-				"a&eacute;cio",
-				"apura&ccedil;&atilde;o"
+				"aecio",
+				"apuracao"
 			]
 		}
 	],
