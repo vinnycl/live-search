@@ -59,6 +59,8 @@ a {
 	background: #fff;
 	box-shadow: inset 0 1px 1px 0#030303;
 	font-weight: bold;
+	letter-spacing: -0.5px;
+	line-height: 18px;
 }
 .menu-g1 label {
 	background-size: 300px 85px;
@@ -117,14 +119,14 @@ a {
 	vertical-align: top;
 	font-weight: bold;
 	padding: 11px 0 0 2px;
-	font-size: 16px;
+	font-size: 15px;
 }
 .searchresults #suggestion-type {
 	color: #b5b5b5;
 	text-align: right;
 	font-style: italic;
 	font-size: 13px;
-	padding: 7px 9px 3px 9px;
+	padding: 7px 11px 3px 9px;
 }
 .searchresults .suggestion-more a {
 	display: block;
@@ -137,10 +139,11 @@ a {
 	border-top: 1px solid #ddd;
 }
 .searchresults .suggestion-searcher.on-globo {
-	margin-top: 7px;
+	margin-top: 8px;
 }
 .searchresults .suggestion-searcher.on-web {
-	margin-bottom: 2px;
+	margin-bottom: 1px;
+	margin-top: 1px;
 }
 .searchresults .suggestion-searcher  a{
 	padding: 9px 13px;
@@ -159,5 +162,8 @@ a {
 	top: -2px;
 }
 
-
+.highlight {
+			background: yellow;
+			text-decoration: underline;
+		}
 
